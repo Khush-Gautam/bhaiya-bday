@@ -44,3 +44,11 @@ function confettiBlast() {
 
     animate();
 }
+
+function playMusic() {
+    const music = document.getElementById("bgMusic");
+    music.play().catch(error => {
+        console.log("Autoplay blocked:", error);
+    });
+}
+
